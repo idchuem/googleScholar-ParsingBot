@@ -1,11 +1,9 @@
 from bs4 import BeautifulSoup
+from os.path import basename
 import urllib.request
 import pandas as pd
 from datetime import datetime, timedelta
-
-
-import smtplib, os  # smtplib: 메일 전송을 위한 패키지
-from os.path import basename
+import smtplib
 from email import encoders  # 파일전송을 할 때 이미지나 문서 동영상 등의 파일을 문자열로 변환할 때 사용할 패키지
 from email.mime.text import MIMEText   # 본문내용을 전송할 때 사용되는 모듈
 from email.mime.multipart import MIMEMultipart   # 메시지를 보낼 때 메시지에 대한 모듈
